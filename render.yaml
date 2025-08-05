@@ -2,7 +2,7 @@ services:
   - type: web
     name: les-plombiers-hockey
     env: python
-    buildCommand: pip install -r config/requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: python app/agent_stats_hockey.py
     envVars:
       - key: FLASK_ENV
