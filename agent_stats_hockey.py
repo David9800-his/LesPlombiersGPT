@@ -20,7 +20,7 @@ def auth_required(f):
     return decorated
 
 @app.route("/")
-def index():
+def acceuil():
     return render_template("carousel.html")
 
 @app.route("/admin")
