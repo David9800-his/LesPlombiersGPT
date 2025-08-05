@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: lesplombiers-site
+    name: les-plombiers-hockey
     env: python
     buildCommand: pip install -r config/requirements.txt
     startCommand: python app/agent_stats_hockey.py
     envVars:
-      - key: PORT
-        value: 10000
+      - key: FLASK_ENV
+        value: production
+    plan: free
