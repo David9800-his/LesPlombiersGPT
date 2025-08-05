@@ -1,3 +1,5 @@
+from datetime import datetime  # ← ajoute ça au début
+
 # Code à ajouter dans agent_stats_hockey.py
 
 import json
