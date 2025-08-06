@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Plombiers - Rétro Hockey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table width="100%" style="background-color:#003366; color:#00ffff; font-family:'Courier New', monospace;">
+        <tr>
+            <td><img src="{{ url_for('static', filename='img/logo_plombiers.gif') }}" alt="Logo" height="64"></td>
+            <td align="center"><h1>Bienvenue chez Les Plombiers 🏒</h1></td>
+            <td align="right"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='img/login.gif') }}" alt="Connexion" height="32"></a></td>
+        </tr>
+    </table>
+
+    <center>
+        <img src="{{ url_for('static', filename='img/bandeau.gif') }}" alt="Bandeau rétro" width="80%">
+        <p>🧰 Stats de joueurs | 🥅 Historique des matchs | 📰 Nouvelles</p>
+        <a href="{{ url_for('carousel') }}"><img src="{{ url_for('static', filename='img/carousel_button.gif') }}" alt="Carrousel" /></a>
+    </center>
+
+    <hr style="border-color:#00ffff">
+    <center>
+        <marquee behavior="scroll" direction="left" scrollamount="6" style="color:#ffffff;">🔥 Breaking News: Jean-Do a scoré un triplé hier soir à l’aréna Vanier!</marquee>
+    </center>
+
+    <footer style="margin-top:2em; text-align:center; color:#00ffff;">
+        <p>&copy; 2025 Les Plombiers - Powered by Flask & GIFs 🎉</p>
+    </footer>
+</body>
+</html>

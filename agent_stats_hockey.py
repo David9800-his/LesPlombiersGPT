@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def accueil():
-    return render_template("carousel.html")
+    return render_template("index.html")
 
 @app.errorhandler(500)
 def server_error(error):
